@@ -8,4 +8,5 @@ alias tf=terraform
 
 2. configure bash complition
 
+touch ~/.bashrc
 terraform-install-autocomplete 
