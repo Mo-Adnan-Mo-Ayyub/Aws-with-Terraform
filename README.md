@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** November 27, 2025
+**Last Updated:** November 28, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 4 |
+| **Days Completed** | 5 |
 | **Total Days** | 30 |
-| **Completion Rate** | 13.33% |
-| **Current Streak** | 4 Days ✅ |
+| **Completion Rate** | 16.67% |
+| **Current Streak** | 5 Days ✅ |
 
 ---
 
@@ -65,6 +65,18 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 ---
 
+### Day 05: S3, VPC & EC2 Instance
+- **Status:** ✅ Completed
+- **Files:** `Day-05/main.tf`, `Day-05/providers.tf`, `Day-05/input.tf`, `Day-05/locals.tf`, `Day-05/output.tf`, `Day-05/terraform.tfvars`
+- **Key Learnings:**
+  - Provisioned S3 bucket with Terraform and used `locals` for naming and tagging
+  - Created a VPC resource and tagged resources for environment identification
+  - Launched EC2 instance using dynamic AMI resolution (SSM) and variable-driven instance type
+  - Implemented variables, locals and outputs for better parameterization and reusability
+  - Exposed outputs such as VPC ID and EC2 public IP for future integrations
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -82,7 +94,13 @@ Terraform/
 │   ├── main.tf
 │   ├── providers.tf
 │   └── state-backend.tf
-├── Day-05/ (Upcoming)
+├── Day-05/
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── input.tf
+│   ├── locals.tf
+│   ├── output.tf
+│   └── terraform.tfvars
 ├── Day-06/ (Upcoming)
 ├── Day-07/ (Upcoming)
 ├── Day-08/ (Upcoming)
@@ -171,13 +189,5 @@ terraform apply
 
 ---
 
-## 📝 License
-
-MIT License - Feel free to use and share!
-
-For full license details, see the [MIT License](https://opensource.org/licenses/MIT) or refer to the `LICENSE` file in this repository.
-
----
-
-**Updated:** November 27, 2025
-**Progress:** 4/30 Days ✅
+**Updated:** November 28, 2025
+**Progress:** 5/30 Days ✅
