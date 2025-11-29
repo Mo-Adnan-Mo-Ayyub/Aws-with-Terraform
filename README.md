@@ -77,15 +77,29 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 ---
 
-### Day 06: Remote State Backend & Basic Infrastructure
+### Day 06: File Structure & .gitignore
 - **Status:** ✅ Completed
 - **Files:** `Day-06/backend.tf`, `Day-06/main.tf`, `Day-06/providers.tf`, `Day-06/variables.tf`, `Day-06/locals.tf`, `Day-06/output.tf`, `Day-06/terraform.tfvars`
+- **Other Changes:** Added `.gitignore` at repository root with entries to exclude local and sensitive files from version control
 - **Key Learnings:**
-  - Configured S3 backend for remote `terraform.tfstate` storage with server-side encryption
-  - Enabled state locking for safe collaboration and to avoid concurrent updates
-  - Implemented consistent variable and local usage across modules to standardize naming
-  - Provisioned core resources (S3 bucket, VPC, EC2 instance) using variables and locals
-  - Exposed outputs for VPC ID and EC2 public IP to enable cross-day integrations
+  - Added `.gitignore` to the repository root to exclude local Terraform files and sensitive data (e.g., `.terraform/`, `*.tfstate`, `terraform.tfvars`), preventing accidental commits
+  - Configured S3 backend in `Day-06/backend.tf` with server-side encryption and state locking to support safe collaboration
+  - Standardized project file layout and validated the structure across days
+  - Implemented consistent variables and locals for naming resources and improving reusability
+  - Provisioned core resources (S3 bucket, VPC, EC2 instance) and exposed outputs (VPC ID, instance public IP) for downstream references
+
+```text
+# .gitignore snippet
+.terraform*
+*.tfstate
+*.tfstate.*backup
+.terraform.lock.hcl
+crash.log
+*.logs
+terraform.tfvars
+*.tfvars.json
+.terraform/
+```
 
 ---
 
