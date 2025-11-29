@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** November 28, 2025
+**Last Updated:** November 29, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 5 |
+| **Days Completed** | 6 |
 | **Total Days** | 30 |
-| **Completion Rate** | 16.67% |
-| **Current Streak** | 5 Days ✅ |
+| **Completion Rate** | 20.00% |
+| **Current Streak** | 6 Days ✅ |
 
 ---
 
@@ -77,6 +77,18 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 ---
 
+### Day 06: Remote State Backend & Basic Infrastructure
+- **Status:** ✅ Completed
+- **Files:** `Day-06/backend.tf`, `Day-06/main.tf`, `Day-06/providers.tf`, `Day-06/variables.tf`, `Day-06/locals.tf`, `Day-06/output.tf`, `Day-06/terraform.tfvars`
+- **Key Learnings:**
+  - Configured S3 backend for remote `terraform.tfstate` storage with server-side encryption
+  - Enabled state locking for safe collaboration and to avoid concurrent updates
+  - Implemented consistent variable and local usage across modules to standardize naming
+  - Provisioned core resources (S3 bucket, VPC, EC2 instance) using variables and locals
+  - Exposed outputs for VPC ID and EC2 public IP to enable cross-day integrations
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -101,7 +113,14 @@ Terraform/
 │   ├── locals.tf
 │   ├── output.tf
 │   └── terraform.tfvars
-├── Day-06/ (Upcoming)
+├── Day-06/
+│   ├── backend.tf
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   ├── locals.tf
+│   ├── output.tf
+│   └── terraform.tfvars
 ├── Day-07/ (Upcoming)
 ├── Day-08/ (Upcoming)
 └── ... (Days 09-30)
@@ -189,5 +208,5 @@ terraform apply
 
 ---
 
-**Updated:** November 28, 2025
-**Progress:** 5/30 Days ✅
+**Updated:** November 29, 2025
+**Progress:** 6/30 Days ✅
