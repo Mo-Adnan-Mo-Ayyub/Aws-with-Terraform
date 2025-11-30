@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** November 29, 2025
+**Last Updated:** November 30, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 6 |
+| **Days Completed** | 7 |
 | **Total Days** | 30 |
-| **Completion Rate** | 20.00% |
-| **Current Streak** | 6 Days ✅ |
+| **Completion Rate** | 23.33% |
+| **Current Streak** | 7 Days ✅ |
 
 ---
 
@@ -103,6 +103,19 @@ terraform.tfvars
 
 ---
 
+### Day 07: EC2 Deployment, Security & Variable Validation
+- **Status:** ✅ Completed
+- **Files:** `Day-07/backend.tf`, `Day-07/main.tf`, `Day-07/providers.tf`, `Day-07/variables.tf`, `Day-07/locals.tf`, `Day-07/output.tf`, `Day-07/terraform.tfvars`
+- **Key Learnings:**
+  - Implemented parameterized EC2 deployment using the `var.config` object and `var.instance_count` for scaling instances
+  - Constrained instance type and region selection using `allowed_instance_type` and `allowed_region`
+  - Controlled public IP assignment using `var.associate_public_ip`, demonstrating network access control via variables
+  - Implemented security group rules using `ingress_values` and `cidr_block` variables for flexible ingress/egress rules
+  - Reused S3 backend with state locking for safe team collaboration (see `Day-07/backend.tf`)
+  - Practiced using `count`, variable-driven tags and structured variables to maintain consistency
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -135,7 +148,14 @@ Terraform/
 │   ├── locals.tf
 │   ├── output.tf
 │   └── terraform.tfvars
-├── Day-07/ (Upcoming)
+├── Day-07/
+│   ├── backend.tf
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   ├── locals.tf
+│   ├── output.tf
+│   └── terraform.tfvars
 ├── Day-08/ (Upcoming)
 └── ... (Days 09-30)
 ```
@@ -222,5 +242,5 @@ terraform apply
 
 ---
 
-**Updated:** November 29, 2025
-**Progress:** 6/30 Days ✅
+**Updated:** November 30, 2025
+**Progress:** 7/30 Days ✅
