@@ -12,10 +12,11 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 7 |
+| **Days Completed** | 8 |
 | **Total Days** | 30 |
-| **Completion Rate** | 23.33% |
-| **Current Streak** | 7 Days ✅ |
+| **Completion Rate** | 26.66% |
+| **Current Streak** | 8 Days ✅ |
+
 
 ---
 
@@ -116,6 +117,22 @@ terraform.tfvars
 
 ---
 
+### Day 08: Terraform Meta-Arguments — depends_on, count & for_each
+- **Status:** ✅ Completed
+- **Files:** `Day-08/main.tf`, `Day-08/variables.tf`, `Day-08/backend.tf`, `Day-08/providers.tf`
+- **Key Learnings:**
+  - Understood Terraform **meta-arguments** that control resource behavior:
+    - `depends_on` for explicit resource ordering and dependency resolution
+    - `count` to quickly replicate resources using iterative numeric loops
+    - `for_each` for dynamically provisioning resources using sets and maps
+  - Demonstrated dependency flow control (VPC → SG → EC2) using `depends_on`
+  - Created multiple S3 buckets via `count.index` using lists
+  - Built dynamic bucket creation using `for_each` with environment-specific maps
+  - Clarified limitations of `count` with sets and power of `for_each` for unique resource identities
+  - Improved Terraform code quality by removing duplication and increasing scalability through iteration
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -156,8 +173,14 @@ Terraform/
 │   ├── locals.tf
 │   ├── output.tf
 │   └── terraform.tfvars
-├── Day-08/ (Upcoming)
-└── ... (Days 09-30)
+├── Day-08/
+│   ├── backend.tf
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   └── output.tf
+├── Day-09/ (Upcoming)
+└── ... (Days 10-30)
 ```
 
 ---
@@ -242,5 +265,5 @@ terraform apply
 
 ---
 
-**Updated:** November 30, 2025
-**Progress:** 7/30 Days ✅
+**Updated:** December 1, 2025
+**Progress:** 8/30 Days ✅
