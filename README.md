@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** November 30, 2025
+**Last Updated:** December 2, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 8 |
+| **Days Completed** | 9 |
 | **Total Days** | 30 |
-| **Completion Rate** | 26.66% |
-| **Current Streak** | 8 Days ✅ |
+| **Completion Rate** | 30% |
+| **Current Streak** | 9 Days ✅ |
 
 
 ---
@@ -133,6 +133,18 @@ terraform.tfvars
 
 ---
 
+### Day 09: Terraform Lifecycle Rules — create_before_destroy, prevent_destroy & ignore_changes
+- **Status:** ✅ Completed
+- **Files:** `Day-09/main.tf`, `Day-09/backend.tf`, `Day-09/providers.tf`, `Day-09/variables.tf`, `Day-09/output.tf`
+- **Key Learnings:**
+ - Learned how to use Terraform **lifecycle meta-arguments** to safely manage resource updates and replacements
+ - Implemented `create_before_destroy` to avoid production downtime during updates
+ - Used `prevent_destroy` to protect critical resources from accidental deletion (e.g., production buckets, VPCs)
+ - Applied `ignore_changes` to skip unnecessary or unsafe updates such as AMI changes, IP changes, and tag drift
+ - Understood real-world scenarios including safe deployment strategies, CI/CD drift handling & disaster prevention
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -179,8 +191,14 @@ Terraform/
 │   ├── providers.tf
 │   ├── variables.tf
 │   └── output.tf
-├── Day-09/ (Upcoming)
-└── ... (Days 10-30)
+├── Day-09/
+│ ├── backend.tf
+│ ├── main.tf
+│ ├── providers.tf
+│ ├── variables.tf
+│ └── output.tf
+└── Day-10/ (Upcoming)
+└── ... (Days 11-30)
 ```
 
 ---
@@ -265,5 +283,5 @@ terraform apply
 
 ---
 
-**Updated:** December 1, 2025
-**Progress:** 8/30 Days ✅
+**Updated:** December 2, 2025
+**Progress:** 9/30 Days ✅
