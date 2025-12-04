@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 2, 2025
+**Last Updated:** December 3, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 9 |
+| **Days Completed** | 10 |
 | **Total Days** | 30 |
-| **Completion Rate** | 30% |
-| **Current Streak** | 9 Days ✅ |
+| **Completion Rate** | 33% |
+| **Current Streak** | 10 Days ✅ |
 
 
 ---
@@ -145,6 +145,22 @@ terraform.tfvars
 
 ---
 
+---
+
+#### Day 10: Conditional Expressions, Dynamic Blocks & Splat Expressions
+- **Status:** ✅ Completed
+- **Files:** `Day-10/main.tf`, `Day-10/variables.tf`, `Day-10/backend.tf`, `Day-10/providers.tf`, `Day-10/output.tf`
+- **Key Learnings:**
+- Used **conditional expressions** to select instance types dynamically based on environment
+- Example: `instance_type = var.environment == "dev" ? "t2.micro" : "t3.micro"`
+- Implemented `dynamic blocks` to generate multiple nested blocks for security group rules
+reducing duplication and improving maintainability
+- Applied splat expressions (`[*]`) to gather attributes from multiple EC2 instances created using count
+- Structured nested objects in variables and iterated using `for_each` inside dynamic blocks
+- Enhanced code reusability, readability and reduced repetitive blocks
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -197,8 +213,14 @@ Terraform/
 │ ├── providers.tf
 │ ├── variables.tf
 │ └── output.tf
-└── Day-10/ (Upcoming)
-└── ... (Days 11-30)
+└── Day-10/
+  ├── backend.tf
+  ├── main.tf
+  ├── providers.tf
+  ├── variables.tf
+  └── output.tf
+└── Day-11/ (Upcoming)
+└── ... (Days 12-30)
 ```
 
 ---
@@ -283,5 +305,5 @@ terraform apply
 
 ---
 
-**Updated:** December 2, 2025
-**Progress:** 9/30 Days ✅
+**Updated:** December 3, 2025
+**Progress:** 10/30 Days ✅
