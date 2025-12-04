@@ -145,8 +145,6 @@ terraform.tfvars
 
 ---
 
----
-
 #### Day 10: Conditional Expressions, Dynamic Blocks & Splat Expressions
 - **Status:** ✅ Completed
 - **Files:** `Day-10/main.tf`, `Day-10/variables.tf`, `Day-10/backend.tf`, `Day-10/providers.tf`, `Day-10/output.tf`
@@ -208,17 +206,17 @@ Terraform/
 │   ├── variables.tf
 │   └── output.tf
 ├── Day-09/
-│ ├── backend.tf
-│ ├── main.tf
-│ ├── providers.tf
-│ ├── variables.tf
-│ └── output.tf
+│   ├── backend.tf
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   └── output.tf
 └── Day-10/
-  ├── backend.tf
-  ├── main.tf
-  ├── providers.tf
-  ├── variables.tf
-  └── output.tf
+    ├── backend.tf
+    ├── main.tf
+    ├── providers.tf
+    ├── variables.tf
+    └── output.tf
 └── Day-11/ (Upcoming)
 └── ... (Days 12-30)
 ```
