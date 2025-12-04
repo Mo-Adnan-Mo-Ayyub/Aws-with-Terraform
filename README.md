@@ -212,11 +212,12 @@ Terraform/
 │   ├── variables.tf
 │   └── output.tf
 └── Day-10/
-    ├── backend.tf
-    ├── main.tf
-    ├── providers.tf
-    ├── variables.tf
-    └── output.tf
+│   ├── backend.tf
+│   ├── backend.tf
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   └── output.tf
 └── Day-11/ (Upcoming)
 └── ... (Days 12-30)
 ```
