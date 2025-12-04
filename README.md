@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 3, 2025
+**Last Updated:** December 4, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 10 |
+| **Days Completed** | 11 |
 | **Total Days** | 30 |
-| **Completion Rate** | 33% |
-| **Current Streak** | 10 Days ✅ |
+| **Completion Rate** | 36% |
+| **Current Streak** | 11 Days ✅ |
 
 
 ---
@@ -159,6 +159,25 @@ reducing duplication and improving maintainability
 
 ---
 
+### **Day 11: Terraform Built-in Functions (Part 1)**
+- **Status:** ✅ Completed  
+- **Files:** `Day-11/main.tf`, `Day-11/output.tf`, `Day-11/locals.tf`, `Day-11/terraform.tfvars`
+- **Key Learnings:**
+  - Understood the importance of Terraform **built-in functions** for transformation, validation and reusable compositions
+  - Used chaining of functions to sanitize resource names such as S3 bucket names:
+    ```
+    formatted_bucket_name = replace(replace(substr(lower(var.bucket_name), 0, 63), " ", "-"), "!", "")
+    ```
+  - Used `split()` and **for expressions** to transform strings into structured list objects
+  - Applied `lookup()` for environment-based configuration with default fallback value
+  - Validated expressions using `terraform console` for faster testing & debugging
+- **Output Example:**  
+Generated dynamic security group rule list:
+```hcl
+[for p in local.port_list : { name = "port-${p}", port = p, description = "allow traffic on port ${p}" }]
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -211,15 +230,21 @@ Terraform/
 │   ├── providers.tf
 │   ├── variables.tf
 │   └── output.tf
-└── Day-10/
+├── Day-10/
 │   ├── backend.tf
 │   ├── backend.tf
 │   ├── main.tf
 │   ├── providers.tf
 │   ├── variables.tf
 │   └── output.tf
-└── Day-11/ (Upcoming)
-└── ... (Days 12-30)
+├── Day-11/
+│   ├── backend.tf
+│   ├── main.tf
+│   ├── locals.tf
+│   ├── variables.tf
+│   └── output.tf
+└── Day-12/ (Upcoming)
+└── ... (Days 13-30)
 ```
 
 ---
@@ -304,5 +329,5 @@ terraform apply
 
 ---
 
-**Updated:** December 3, 2025
-**Progress:** 10/30 Days ✅
+**Updated:** December 4, 2025
+**Progress:** 11/30 Days ✅
