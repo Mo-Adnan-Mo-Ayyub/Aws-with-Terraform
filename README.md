@@ -175,10 +175,9 @@ reducing duplication and improving maintainability
 Generated dynamic security group rule list:
 ```hcl
 [for p in local.port_list : { name = "port-${p}", port = p, description = "allow traffic on port ${p}" }]
-
+```
 ---
 
----
 ## 📁 Project Structure
 
 ```text
