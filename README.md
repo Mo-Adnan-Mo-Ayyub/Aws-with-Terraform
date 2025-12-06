@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 4, 2025
+**Last Updated:** December 5, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 11 |
+| **Days Completed** | 12 |
 | **Total Days** | 30 |
-| **Completion Rate** | 36% |
-| **Current Streak** | 11 Days ✅ |
+| **Completion Rate** | 40% |
+| **Current Streak** | 12 Days ✅ |
 
 
 ---
@@ -178,6 +178,19 @@ Generated dynamic security group rule list:
 ```
 ---
 
+### **Day 12: Terraform Built-in Functions (Part 2)**
+- **Status:** ✅ Completed
+- **Files:** `Day-12/main.tf`, `Day-12/variables.tf`, `Day-12/locals.tf`, `Day-12/output.tf`, `Day-12/terraform.tfvars`
+- **Key Learnings:**
+  - Implemented **validation functions** using `length()`, `regex()`, and `endswith()` to ensure correct variable formatting and prevent invalid input errors
+  - Used **sensitive = true** to secure secrets and protect value exposure in console outputs
+  - Performed **type conversion** using `concat()` and `toset()` to merge lists and automatically remove duplicates for clean configuration inputs
+  - Applied **numeric functions** such as `abs()`, `sum()`, and `max()/min()` for real-world cost evaluation and aggregated metrics
+  - Leveraged **timestamp()** and **formatdate()** for dynamic resource naming and versioned backups like `backup-2025-12-06`
+  - Practiced file handling using `fileexists()`, `file()`, and `jsondecode()` to load optional config JSON safely with conditional expressions
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -243,8 +256,17 @@ Terraform/
 │   ├── locals.tf
 │   ├── variables.tf
 │   └── output.tf
-└── Day-12/ (Upcoming)
-└── ... (Days 13-30)
+├── Day-12/
+│   ├── backend.tf
+│   ├── config.json
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   ├── locals.tf
+│   ├── output.tf
+│   └── terraform.tfvars
+└── Day-13/ (Upcoming)
+└── ... (Days 14-30)
 ```
 
 ---
@@ -329,5 +351,5 @@ terraform apply
 
 ---
 
-**Updated:** December 4, 2025
-**Progress:** 11/30 Days ✅
+**Updated:** December 5, 2025
+**Progress:** 12/30 Days ✅
