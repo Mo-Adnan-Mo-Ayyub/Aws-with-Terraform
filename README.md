@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 5, 2025
+**Last Updated:** December 7, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 12 |
+| **Days Completed** | 13 |
 | **Total Days** | 30 |
-| **Completion Rate** | 40% |
-| **Current Streak** | 12 Days ✅ |
+| **Completion Rate** | 43% |
+| **Current Streak** | 13 Days ✅ |
 
 
 ---
@@ -191,6 +191,19 @@ Generated dynamic security group rule list:
 
 ---
 
+### Day 13: Terraform Data Sources — Use Existing VPCs, Subnets & AMIs Safely
+- **Status:** ✅ Completed
+- **Files:** `Day-13/main.tf`, `Day-13/datasource.tf`, `Day-13/variables.tf`, `Day-13/output.tf`, `Day-13/terraform.tfvars`
+**Key Learnings:**
+- Understood what **Terraform Data Sources** are and why they are essential for referencing **existing** AWS resources
+- Learned to use `data "aws_vpc"`, `data "aws_subnet"`, and `data "aws_ami"` to fetch real AWS resource IDs
+- Avoided **hardcoding VPC IDs, Subnet IDs & AMI IDs**, improving automation and repeatability
+- Used `filters`, `owners`, and `most_recent` to dynamically select resources
+- Implemented real-world EC2 deployment using dynamic AMI discovery and existing network resources
+- Verified configuration using `terraform plan` and observed Terraform using referenced resource values instead of creating new infrastructure
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -265,8 +278,16 @@ Terraform/
 │   ├── locals.tf
 │   ├── output.tf
 │   └── terraform.tfvars
-└── Day-13/ (Upcoming)
-└── ... (Days 14-30)
+├── Day-13/
+│   ├── backend.tf
+│   ├── datasource.tf
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   ├── locals.tf
+│   ├── output.tf
+└── Day-14/ (Upcoming)
+└── ... (Days 15-30)
 ```
 
 ---
@@ -351,5 +372,5 @@ terraform apply
 
 ---
 
-**Updated:** December 5, 2025
-**Progress:** 12/30 Days ✅
+**Updated:** December 7, 2025
+**Progress:** 13/30 Days ✅
