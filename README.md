@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 7, 2025
+**Last Updated:** December 8, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 13 |
+| **Days Completed** | 14 |
 | **Total Days** | 30 |
-| **Completion Rate** | 43% |
-| **Current Streak** | 13 Days ✅ |
+| **Completion Rate** | 46% |
+| **Current Streak** | 14 Days ✅ |
 
 
 ---
@@ -286,8 +286,20 @@ Terraform/
 │   ├── variables.tf
 │   ├── locals.tf
 │   ├── output.tf
-└── Day-14/ (Upcoming)
-└── ... (Days 15-30)
+├── Day-13/
+│   ├── backend.tf
+│   ├── datasource.tf
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   ├── locals.tf
+│   ├── output.tf
+│   └──www/                
+│     ├── index.html     
+│     ├── style.css       
+│     └── script.js
+└── Day-15/ (Upcoming)
+└── ... (Days 16-30)
 ```
 
 ---
@@ -372,5 +384,5 @@ terraform apply
 
 ---
 
-**Updated:** December 7, 2025
-**Progress:** 13/30 Days ✅
+**Updated:** December 8, 2025
+**Progress:** 14/30 Days ✅
