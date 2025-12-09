@@ -204,6 +204,23 @@ Generated dynamic security group rule list:
 
 ---
 
+### Day 14: Host Static Website on AWS S3 + CloudFront + Route 53 using Terraform
+- **Status:** ✅ Completed
+- **Files:**  
+  `Day-14/backend.tf`, `Day-14/datasource.tf`, `Day-14/main.tf`, `Day-14/providers.tf`, `Day-14/variables.tf`, `Day-14/locals.tf`, `Day-14/output.tf`, `Day-14/terraform.tfvars`, `Day-14/www/` *(HTML, CSS, JS files for deployment)*
+
+- **Key Learnings:**
+  - Hosted a **fully private S3 bucket** configured for static website storage
+  - Implemented **CloudFront distribution** with edge caching for performance & global CDN delivery
+  - Configured **Origin Access Control (OAC)** so CloudFront is the only entity allowed to access bucket objects
+  - Attached **Bucket Policy** granting restricted read access using `aws:SourceArn`
+  - Used `fileset()` + `for_each` + `filemd5()` to upload multiple static assets dynamically from local `www` folder
+  - Added **Route 53 DNS records** with alias mapping to CloudFront for custom domain support
+  - Attached **ACM SSL Certificate** for HTTPS (in `us-east-1` mandatory for CloudFront)
+  - Learned cache management, invalidation, and TTL-based optimizations
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -286,7 +303,7 @@ Terraform/
 │   ├── variables.tf
 │   ├── locals.tf
 │   ├── output.tf
-├── Day-13/
+├── Day-14/
 │   ├── backend.tf
 │   ├── datasource.tf
 │   ├── main.tf
