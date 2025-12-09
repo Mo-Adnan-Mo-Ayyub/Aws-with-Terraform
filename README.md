@@ -2,9 +2,14 @@
 
 Welcome to my 30-day AWS and Terraform learning repository! This README will be updated daily as I progress through each day's learning objectives.
 
-> **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
+> **🔗 Connect with Me:** <a href="https://www.linkedin.com/in/mohammad-adnan-m/"><img src="https://img.icons8.com/fluency/2x/linkedin.png" height="60px"></img></a> &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 8, 2025
+
+<a href=""><img src="https://user-images.githubusercontent.com/91791257/235086411-9ec7aa5e-c095-44ce-b9e6-57b3bc3fead2.png" height="60px"></img></a>
+<a href="https://twitter.com/thecloudopscomm"><img src="https://i.postimg.cc/pVqVTNJd/X-logo.png" height="60px"></img></a>
+
+
+**Last Updated:** December 9, 2025
 
 ---
 
@@ -12,10 +17,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 14 |
+| **Days Completed** | 15|
 | **Total Days** | 30 |
-| **Completion Rate** | 46% |
-| **Current Streak** | 14 Days ✅ |
+| **Completion Rate** | 50% |
+| **Current Streak** | 15 Days ✅ |
 
 
 ---
@@ -221,6 +226,24 @@ Generated dynamic security group rule list:
 
 ---
 
+### Day 15: AWS VPC Peering Across Regions Using Terraform
+- **Status:** ✅ Completed
+- **Files:** `Day-15/backend.tf`, `Day-15/main.tf`, `Day-15/providers.tf`, `Day-15/variables.tf`, `Day-15/locals.tf`, `Day-15/data.tf`
+
+- **Key Learnings:**
+  - Created **multi-region VPCs** using provider aliases *(us-east-1 & us-west-2)*
+  - Built independent networking: subnets, internet gateways, route tables & associations for both VPCs
+  - Used **data sources** to fetch region-specific AMIs & availability zones dynamically
+  - Launched **EC2 instances with Nginx user-data** for testing connectivity using `curl private-ip` across VPCs
+  - Implemented **bi-directional VPC peering** with requester & accepter configuration and routing updates
+  - Configured route tables to route **10.0.0.0/16 ↔ 10.1.0.0/16** traffic over **VPC peering** instead of IGW
+  - Added security rules for **SSH, ICMP (ping), and web access**
+  - Ensured **DNS Hostnames & DNS Support** enabled for private DNS resolution
+  - Verified connectivity using ping & curl across private IPs
+  - Cleaned up resources using `terraform destroy` to avoid AWS billing
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -315,8 +338,15 @@ Terraform/
 │     ├── index.html     
 │     ├── style.css       
 │     └── script.js
-└── Day-15/ (Upcoming)
-└── ... (Days 16-30)
+├── Day-15/
+│   ├── backend.tf
+│   ├── data.tf
+│   ├── locals.tf
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── variables.tf
+└── Day-16/ (Upcoming)
+└── ... (Days 17-30)
 ```
 
 ---
@@ -401,5 +431,5 @@ terraform apply
 
 ---
 
-**Updated:** December 8, 2025
-**Progress:** 14/30 Days ✅
+**Updated:** December 9, 2025
+**Progress:** 15/30 Days ✅
