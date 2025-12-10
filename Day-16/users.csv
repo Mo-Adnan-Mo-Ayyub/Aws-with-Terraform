@@ -1,0 +1,27 @@
+first_name,last_name,department,job_title,email,phone,employee_id,location
+Michael,Scott,Education,Regional Manager,michael.scott@dundermifflin.com,570-000-0001,DM001,Scranton
+Dwight,Schrute,Sales,Assistant to the Regional Manager,dwight.schrute@dundermifflin.com,570-000-0002,DM002,Scranton
+Jim,Halpert,Sales,Sales Representative,jim.halpert@dundermifflin.com,570-000-0003,DM003,Scranton
+Pam,Beesly,Reception,Receptionist,pam.beesly@dundermifflin.com,570-000-0004,DM004,Scranton
+Ryan,Howard,Temps,Temp,ryan.howard@dundermifflin.com,570-000-0005,DM005,Scranton
+Andy,Bernard,Sales,Sales Representative,andy.bernard@dundermifflin.com,570-000-0006,DM006,Scranton
+Robert,California,Corporate,CEO,robert.california@dundermifflin.com,570-000-0007,DM007,Scranton
+Stanley,Hudson,Sales,Sales Representative,stanley.hudson@dundermifflin.com,570-000-0008,DM008,Scranton
+Kevin,Malone,Accounting,Accountant,kevin.malone@dundermifflin.com,570-000-0009,DM009,Scranton
+Angela,Martin,Accounting,Accountant,angela.martin@dundermifflin.com,570-000-0010,DM010,Scranton
+Oscar,Martinez,Accounting,Accountant,oscar.martinez@dundermifflin.com,570-000-0011,DM011,Scranton
+Phyllis,Vance,Sales,Sales Representative,phyllis.vance@dundermifflin.com,570-000-0012,DM012,Scranton
+Toby,Flenderson,HR,HR Representative,toby.flenderson@dundermifflin.com,570-000-0013,DM013,Scranton
+Kelly,Kapoor,Customer Service,Customer Service Representative,kelly.kapoor@dundermifflin.com,570-000-0014,DM014,Scranton
+Darryl,Philbin,Warehouse,Warehouse Foreman,darryl.philbin@dundermifflin.com,570-000-0015,DM015,Scranton
+Creed,Bratton,Quality Assurance,Quality Assurance,creed.bratton@dundermifflin.com,570-000-0016,DM016,Scranton
+Meredith,Palmer,Supplier Relations,Supplier Relations,meredith.palmer@dundermifflin.com,570-000-0017,DM017,Scranton
+Erin,Hannon,Reception,Receptionist,erin.hannon@dundermifflin.com,570-000-0018,DM018,Scranton
+Gabe,Lewis,Corporate,Coordinating Director of Emerging Regions,gabe.lewis@dundermifflin.com,570-000-0019,DM019,Scranton
+Jan,Levinson,Corporate,Vice President of Northeast Sales,jan.levinson@dundermifflin.com,570-000-0020,DM020,Scranton
+David,Wallace,Corporate,CFO,david.wallace@dundermifflin.com,570-000-0021,DM021,Scranton
+Holly,Flax,HR,HR Representative,holly.flax@dundermifflin.com,570-000-0022,DM022,Scranton
+Charles,Miner,Corporate,Vice President of the Northeast Region,charles.miner@dundermifflin.com,570-000-0023,DM023,Scranton
+Jo,Bennett,Corporate,CEO of Sabre,jo.bennett@dundermifflin.com,570-000-0024,DM024,Scranton
+Clark,Green,Sales,Sales Representative,clark.green@dundermifflin.com,570-000-0025,DM025,Scranton
+Pete,Miller,Customer Service,Customer Service Representative,pete.miller@dundermifflin.com,570-000-0026,DM026,Scranton

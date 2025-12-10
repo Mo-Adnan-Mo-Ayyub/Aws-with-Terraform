@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 9, 2025
+**Last Updated:** December 10, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 15|
+| **Days Completed** | 16|
 | **Total Days** | 30 |
-| **Completion Rate** | 50% |
-| **Current Streak** | 15 Days ✅ |
+| **Completion Rate** | 53% |
+| **Current Streak** | 16 Days ✅ |
 
 
 ---
@@ -239,6 +239,25 @@ Generated dynamic security group rule list:
 
 ---
 
+### Day 16: AWS IAM User Management with Terraform (CSV-Driven Automation)
+- **Status:** ✅ Completed  
+- **Files:**  
+  `Day-16/backend.tf`, `Day-16/data.tf`, `Day-16/groups.tf`, `Day-16/locals.tf`, `Day-16/main.tf`, `Day-16/mfa.tf`, `Day-16/providers.tf`, `Day-16/output.tf`, `Day-16/variables.tf`, `Day-16/users.csv`
+
+- **Key Learnings:**
+  - Loaded a **CSV file** using `csvdecode()` to automate bulk IAM user creation
+  - Generated **dynamic IAM usernames** using Terraform string functions (`lower`, `replace`, substrings)
+  - Created **IAM users** using `for_each`, using fields like first name, last name, department, job title, email, phone, emp_id, location
+  - Provisioned **console access** with `aws_iam_user_login_profile` and enforced **password reset on first login**
+  - Implemented **IAM groups** (department-based, role-based) and **dynamic group membership** using filters + conditionals
+  - Added **custom IAM policies** and attached them to groups to enforce least-privilege access
+  - Enabled **MFA requirement** for IAM users via Terraform to strengthen login security
+  - Used `can()` and conditional logic to avoid failures when CSV fields are missing or optional
+  - Stored Terraform state in **S3 backend** with **DynamoDB locking** for safe team collaboration
+  - Designed onboarding to be **CSV-driven**, making user creation, updates, and permissions version-controlled
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -340,8 +359,19 @@ Terraform/
 │   ├── main.tf
 │   ├── providers.tf
 │   ├── variables.tf
-└── Day-16/ (Upcoming)
-└── ... (Days 17-30)
+├── Day-16/
+│   ├── backend.tf
+│   ├── data.tf
+│   ├── groups.tf
+│   ├── locals.tf
+│   ├── main.tf
+│   ├── mfa.tf
+│   ├── providers.tf
+│   ├── output.tf
+│   ├── variables.tf
+│   ├── users.csv
+└── Day-17/ (Upcoming)
+└── ... (Days 18-30)
 ```
 
 ---
@@ -426,5 +456,5 @@ terraform apply
 
 ---
 
-**Updated:** December 9, 2025
-**Progress:** 15/30 Days ✅
+**Updated:** December 10, 2025
+**Progress:** 16/30 Days ✅
