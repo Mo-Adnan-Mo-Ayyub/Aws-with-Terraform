@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 10, 2025
+**Last Updated:** December 11, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 16|
+| **Days Completed** | 17|
 | **Total Days** | 30 |
-| **Completion Rate** | 53% |
-| **Current Streak** | 16 Days ✅ |
+| **Completion Rate** | 56% |
+| **Current Streak** | 17 Days ✅ |
 
 
 ---
@@ -258,6 +258,25 @@ Generated dynamic security group rule list:
 
 ---
 
+### Day 17: Blue-Green Deployment on AWS Elastic Beanstalk with Terraform  
+**Status:** ✅ Completed  
+**Files:**  
+`backend.tf`, `main.tf`, `blue_environment.tf`, `green_environment.tf`,  
+`app_versions/`, `package_apps.sh / .ps1`, `variables.tf`, `outputs.tf`, `providers.tf`
+
+### Key Learnings:
+- Implemented **Blue-Green deployment** using Terraform + Elastic Beanstalk  
+- Packaged app versions (v1 & v2) and uploaded to **private S3 bucket**  
+- Created two identical environments: **Blue (live)** & **Green (staging)**  
+- Deployed v1 → Blue, v2 → Green and tested before promoting  
+- Performed **CNAME swap** to shift traffic with **zero downtime**  
+- Learned quick **rollback** by swapping back to the old environment  
+- Configured EB settings: IAM roles, autoscaling, health checks, env vars  
+- Validated both environments using their CNAME URLs  
+- Practiced a full cycle: package → deploy → test → swap → rollback
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -370,7 +389,20 @@ Terraform/
 │   ├── output.tf
 │   ├── variables.tf
 │   ├── users.csv
-└── Day-17/ (Upcoming)
+├── Day-17/
+├── app_versions/
+│   ├── v1/
+│   └── v2/
+├── scripts/
+│   ├── package_apps.sh
+│   └── package_apps.ps1
+├── main.tf
+├── blue_environment.tf
+├── green_environment.tf
+├── providers.tf
+├── outputs.tf
+└── variables.tf
+└── Day-18/ (Upcoming)
 └── ... (Days 18-30)
 ```
 
@@ -456,5 +488,5 @@ terraform apply
 
 ---
 
-**Updated:** December 10, 2025
-**Progress:** 16/30 Days ✅
+**Updated:** December 11, 2025
+**Progress:** 17/30 Days ✅
