@@ -275,6 +275,8 @@ Generated dynamic security group rule list:
 - Validated both environments using their CNAME URLs  
 - Practiced a full cycle: package → deploy → test → swap → rollback
 
+---
+
 ### Day 18: Serverless Image Processing using AWS Lambda with Terraform  
 **Status:** ✅ Completed  
 **Files:**  
