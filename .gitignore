@@ -8,3 +8,5 @@ terraform.tfvars
 *.tfvars.json
 .terraform/
 *.pem
+/Day-17
+/Day-18

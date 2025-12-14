@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 11, 2025
+**Last Updated:** December 14, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 17|
+| **Days Completed** | 18|
 | **Total Days** | 30 |
-| **Completion Rate** | 56% |
-| **Current Streak** | 17 Days ✅ |
+| **Completion Rate** | 60% |
+| **Current Streak** | 18 Days ✅ |
 
 
 ---
@@ -275,6 +275,24 @@ Generated dynamic security group rule list:
 - Validated both environments using their CNAME URLs  
 - Practiced a full cycle: package → deploy → test → swap → rollback
 
+### Day 18: Serverless Image Processing using AWS Lambda with Terraform  
+**Status:** ✅ Completed  
+**Files:**  
+`backend.tf`, `main.tf`, `iam.tf`, `lambda.tf`, `layer.tf`, `s3.tf`,  
+`s3_notifications.tf`, `variables.tf`, `outputs.tf`,  
+`scripts/build_layer.sh`, `scripts/deploy.sh`, `scripts/destroy.sh`
+
+### Key Learnings:
+- Built a **fully serverless, event-driven image processing pipeline** on AWS  
+- Used **S3 event notifications** to trigger Lambda on image uploads  
+- Packaged **Pillow** as a **Lambda Layer** for clean dependency management  
+- Generated multiple image variants (JPEG, WebP, PNG, thumbnail) automatically  
+- Applied **least-privilege IAM policies** for Lambda S3 and CloudWatch access  
+- Enabled **S3 encryption, versioning, and public access blocking**  
+- Learned to build Lambda dependencies in a **Lambda-compatible environment**  
+- Used CloudWatch Logs to monitor execution, cold starts, and performance  
+- Automated the entire stack using **Terraform from infra to code execution**  
+
 ---
 
 ## 📁 Project Structure
@@ -402,9 +420,21 @@ Terraform/
 ├── providers.tf
 ├── outputs.tf
 └── variables.tf
-└── Day-18/ (Upcoming)
-└── ... (Days 18-30)
-```
+├── Day-18/
+├── lambda/
+│   ├── lambda_function.py
+│   └── requirements.txt
+├── scripts/
+│   ├── build_layer_docker.sh
+│   └── deploy.sh
+│   └── destroy.sh
+├── main.tf
+├── providers.tf
+├── outputs.tf
+└── variables.tf
+└── terraform.tfvars
+└── Day-19/ (Upcoming)
+└── ... (Days 20-30)
 
 ---
 
@@ -488,5 +518,5 @@ terraform apply
 
 ---
 
-**Updated:** December 11, 2025
-**Progress:** 17/30 Days ✅
+**Updated:** December 14, 2025
+**Progress:** 18/30 Days ✅
