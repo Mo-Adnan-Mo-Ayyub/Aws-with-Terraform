@@ -387,10 +387,10 @@ Terraform/
 │   ├── variables.tf
 │   ├── locals.tf
 │   ├── output.tf
-│   └──www/                
-│     ├── index.html     
-│     ├── style.css       
-│     └── script.js
+│   ├── www/                
+│   │   ├── index.html     
+│   │   ├── style.css       
+│   │   └── script.js
 ├── Day-15/
 │   ├── backend.tf
 │   ├── data.tf
@@ -410,32 +410,32 @@ Terraform/
 │   ├── variables.tf
 │   ├── users.csv
 ├── Day-17/
-├── app_versions/
-│   ├── v1/
-│   └── v2/
-├── scripts/
-│   ├── package_apps.sh
-│   └── package_apps.ps1
-├── main.tf
-├── blue_environment.tf
-├── green_environment.tf
-├── providers.tf
-├── outputs.tf
-└── variables.tf
+│   ├── app_versions/
+│   │   ├── v1/
+│   │   └── v2/
+│   ├── scripts/
+│   │   ├── package_apps.sh
+│   │   └── package_apps.ps1
+│   ├── main.tf
+│   ├── blue_environment.tf
+│   ├── green_environment.tf
+│   ├── providers.tf
+│   ├── outputs.tf
+│   └── variables.tf
 ├── Day-18/
-├── lambda/
-│   ├── lambda_function.py
-│   └── requirements.txt
-├── scripts/
-│   ├── build_layer_docker.sh
-│   └── deploy.sh
-│   └── destroy.sh
-├── main.tf
-├── providers.tf
-├── outputs.tf
-└── variables.tf
-└── terraform.tfvars
-└── Day-19/ (Upcoming)
+│   ├── lambda/
+│   │   ├── lambda_function.py
+│   │   └── requirements.txt
+│   ├── scripts/
+│   │   ├── build_layer_docker.sh
+│   │   ├── deploy.sh
+│   │   └── destroy.sh
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── outputs.tf
+│   ├── variables.tf
+│   └── terraform.tfvars
+├── Day-19/ (Upcoming)
 └── ... (Days 20-30)
 
 ---
