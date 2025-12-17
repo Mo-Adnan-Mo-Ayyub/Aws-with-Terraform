@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 14, 2025
+**Last Updated:** December 17, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 18|
+| **Days Completed** | 20|
 | **Total Days** | 30 |
-| **Completion Rate** | 60% |
-| **Current Streak** | 18 Days ✅ |
+| **Completion Rate** | 67% |
+| **Current Streak** | 20 Days ✅ |
 
 
 ---
@@ -297,6 +297,45 @@ Generated dynamic security group rule list:
 
 ---
 
+### Day 19: Terraform Provisioners (local-exec, remote-exec, file) – Practical Usage  
+**Status:** ✅ Completed  
+**Files:**  
+`backend.tf`, `provider.tf`, `variables.tf`, `security_group.tf`, `ec2.tf`, `outputs.tf`,  
+`scripts/welcome.sh`
+
+### Key Learnings:
+- Understood **what Terraform provisioners are** and when *not* to use them  
+- Used **local-exec** to run commands on the Terraform host (CI/CD or local machine)  
+- Used **remote-exec** to execute commands on EC2 via SSH for bootstrapping  
+- Used **file provisioner** to copy scripts and files to remote instances  
+- Learned how **connection blocks** work (SSH user, private key, host)  
+- Used **self.public_ip** and **self.id** for dynamic provisioning  
+- Practiced **terraform taint** to force re-running provisioners  
+- Learned why provisioners are an **escape hatch**, not a best practice  
+- Compared provisioners vs **cloud-init / user_data / immutable images**  
+
+---
+
+### Day 20: Terraform Custom Modules for EKS – From Zero to Production  
+**Status:** ✅ Completed  
+**Files:**  
+`main.tf`, `providers.tf`, `backend.tf`, `variables.tf`, `outputs.tf`,  
+`modules/vpc/`, `modules/iam/`, `modules/eks/`, `modules/secrets/`
+
+### Key Learnings:
+- Understood **what Terraform modules are** and why they matter in production  
+- Differentiated between **root module** and **child (custom) modules**  
+- Built **custom reusable modules** instead of repeating Terraform code  
+- Learned **input/output flow** between modules via variables and outputs  
+- Designed a **production-grade EKS architecture** using separate modules  
+- Passed data between modules (VPC → EKS, IAM → EKS, Secrets → EKS)  
+- Used **data sources at root** to keep modules clean and reusable  
+- Applied **module versioning with Git tags** for safe upgrades  
+- Enforced consistency using **standard tags and defaults**  
+- Learned how modules improve **maintainability, scalability, and team workflows**  
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -435,8 +474,27 @@ Terraform/
 │   ├── outputs.tf
 │   ├── variables.tf
 │   └── terraform.tfvars
-├── Day-19/ (Upcoming)
-└── ... (Days 20-30)
+├── Day-19/
+│   ├── backend.tf
+│   ├── provider.tf
+│   ├── variables.tf
+│   ├── security_group.tf
+│   ├── ec2.tf
+│   ├── outputs.tf
+│   └── scripts/
+│       └── welcome.sh
+├── Day-20/
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── backend.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── modules/
+│       ├── vpc/
+│       ├── iam/
+│       ├── eks/
+│       └── secrets/
+└── ... (Days 21-30)
 
 ---
 
@@ -520,5 +578,5 @@ terraform apply
 
 ---
 
-**Updated:** December 14, 2025
-**Progress:** 18/30 Days ✅
+**Updated:** December 17, 2025
+**Progress:** 20/30 Days ✅
