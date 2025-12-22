@@ -568,6 +568,8 @@ Terraform/
 
 ---
 
+---
+
 ## 🎯 Learning Path Overview
 
 ### **Week 1: Foundations (Days 1-7)**
