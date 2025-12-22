@@ -4,7 +4,7 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 > **🔗 Connect with Me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammad-adnan-m/) &nbsp; [![Blog](https://img.shields.io/badge/Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white)](https://adnandevops.blogspot.com/) &nbsp; [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://mohammad-adnan-devops-5g34mr2.gamma.site/)
 
-**Last Updated:** December 17, 2025
+**Last Updated:** December 21, 2025
 
 ---
 
@@ -12,10 +12,10 @@ Welcome to my 30-day AWS and Terraform learning repository! This README will be 
 
 | Metric | Value |
 |--------|-------|
-| **Days Completed** | 20|
+| **Days Completed** | 22|
 | **Total Days** | 30 |
-| **Completion Rate** | 67% |
-| **Current Streak** | 20 Days ✅ |
+| **Completion Rate** | 73% |
+| **Current Streak** | 22 Days ✅ |
 
 
 ---
@@ -336,6 +336,53 @@ Generated dynamic security group rule list:
 
 ---
 
+### Day 21: AWS Policy & Governance as Code with Terraform  
+**Status:** ✅ Completed  
+**Files:**  
+`main.tf`, `providers.tf`, `backend.tf`, `variables.tf`, `outputs.tf`,  
+`modules/audit_s3/`, `modules/iam/`, `modules/aws_config/`, `modules/random/`
+
+### Key Learnings:
+- Understood the **difference between policy (preventive) and governance (detective)** controls  
+- Implemented **IAM deny-based policies** to prevent risky actions at request time  
+- Enforced **MFA for delete operations** using `aws:MultiFactorAuthPresent`  
+- Forced **encrypted transport (HTTPS)** for S3 uploads using policy conditions  
+- Applied **mandatory tagging policies** to control resource creation  
+- Built a **secure, encrypted, versioned S3 audit bucket** for compliance logs  
+- Configured **bucket policies** to allow AWS Config delivery while blocking insecure access  
+- Set up **AWS Config recorder and delivery channel** using Terraform  
+- Deployed **managed AWS Config rules** to detect non-compliant resources  
+- Learned how **IAM + AWS Config together provide defense in depth**  
+- Used Terraform modules to separate **audit, IAM, and compliance concerns**  
+- Practiced real-world **debugging with CloudTrail and IAM Policy Simulator**  
+
+---
+
+### Day 22: 2-Tier AWS Architecture with Terraform (EC2 + RDS)  
+**Status:** ✅ Completed  
+**Files:**  
+`main.tf`, `providers.tf`, `backend.tf`, `variables.tf`, `outputs.tf`,  
+`modules/vpc/`, `modules/security_group/`, `modules/secrets/`,  
+`modules/rds/`, `modules/ec2/`
+
+### Key Learnings:
+- Designed a **classic 2-tier AWS architecture** using Terraform  
+- Built a custom **VPC with public and private subnets across AZs**  
+- Implemented **Internet Gateway and NAT Gateway** with correct routing  
+- Enabled **private subnet outbound access** for RDS via NAT Gateway  
+- Deployed **EC2 web tier** in public subnets running a Flask application  
+- Deployed **RDS MySQL** in private subnets with no public access  
+- Used **security-group-to-security-group rules** instead of CIDR-based access  
+- Enforced **least privilege networking** between web and database tiers  
+- Generated and stored DB credentials securely using **AWS Secrets Manager**  
+- Avoided hardcoding secrets by **injecting values via Terraform outputs**  
+- Used **user data templates** to deploy and configure applications on EC2  
+- Validated end-to-end connectivity using application health endpoints  
+- Structured Terraform using **clean, reusable modules** for each concern  
+- Learned cost-awareness around **NAT Gateways and RDS instances**  
+
+---
+
 ## 📁 Project Structure
 
 ```text
@@ -494,6 +541,29 @@ Terraform/
 │       ├── iam/
 │       ├── eks/
 │       └── secrets/
+├── Day-21/
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── backend.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── modules/
+│       ├── audit_s3/
+│       ├── iam/
+│       ├── aws_config/
+│       └── random/
+├── Day-22/
+│   ├── main.tf
+│   ├── providers.tf
+│   ├── backend.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── modules/
+│       ├── vpc/
+│       ├── security_group/
+│       ├── secrets/
+│       ├── rds/
+│       ├── ec2/
 └── ... (Days 21-30)
 
 ---
@@ -578,5 +648,5 @@ terraform apply
 
 ---
 
-**Updated:** December 17, 2025
-**Progress:** 20/30 Days ✅
+**Updated:** December 21, 2025
+**Progress:** 22/30 Days ✅
